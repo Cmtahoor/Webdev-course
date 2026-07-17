@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Bloom</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+        }
+
+        .header {
+            background: url('coffeimg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 300px 20px 180px;
+            position: relative;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for header */
+        }
+
+        .navbar .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        .navbar .menu {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar .menu li {
+            margin-left: 20px;
+        }
+
+        .navbar .menu a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar .cart {
+            font-size: 24px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 60px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .header p {
+            font-size: 24px;
+            margin-top: 0;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        .header .btn {
+            background-color: #e76f51;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .coffee-style-section {
+            padding: 80px 20px;
+            text-align: center;
+            background-color: white;
+        }
+
+        .coffee-style-section h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .coffee-style-section p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 60px;
+        }
+
+        .coffee-cards {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .coffee-card {
+            background-color: #37140a;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .coffee-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .coffee-card h3 {
+            font-size: 22px;
+            margin: 20px 0 10px;
+            color: #ffffff;
+        }
+
+        .coffee-card .btn {
+            background-color: #f9c06a;
+            color: rgb(0, 0, 0);
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 15px;
+        }
+
+        .newsletter-section {
+            background-color: #80603a; 
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .newsletter-section h2 {
+            font-size: 36px;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input[type="email"] {
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 16px;
+        }
+
+        .newsletter-form button {
+            background-color: #f9c06a;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .footer {
+            background-color: #333333; 
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer .logo {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            font-size: 14px;
+            margin: 0;
+            color: rgba(255, 255, 255, 0.7);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="navbar">
+            <div class="logo">CAFÉ BLOOM</div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="cart">&#x1F6D2;</div> </div>
+        <h1>Where Ambition Meets Aroma</h1>
+        <p>Your daily dose of inspiration</p>
+        <a href="#" class="btn">VIEW MENU</a>
+    </div>
+
+    <div class="coffee-style-section">
+        <h2>Enjoy a new blend of coffee style</h2>
+        <p>Explore all flavours of coffee with us. There is always a new cup worth experiencing.</p>
+
+        <div class="coffee-cards">
+            <div class="coffee-card">
+                <img src="coffe1.jpg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="coffee-card">
+                <img src="coffe2.jpg" alt="Chai Latte">
+                <h3>Chai Latte</h3>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="coffee-card">
+                <img src="coffe3.jpg" alt="Macchiato">
+                <h3>Macchiato</h3>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+
+            <div class="coffee-card">
+                <img src="coffe4.jpg" alt="Espresso">
+                <h3>Espresso</h3>
+                <a href="#" class="btn">Order Now</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="newsletter-section">
+        <h2>Subscribe to get the Latest News</h2>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button>Subscribe</button>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">CAFÉ BLOOM</div>
+        <p>© 2023 Café Bloom. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
