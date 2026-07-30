@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>📚Book Donation Form</title>
+ </head>
+  <body>
+
+   <h1>📚 Book Donation Form</h1>
+    <br> 
+   <p>📖 Complete the form below to donate books to the library!</p>
+    <hr>
+
+ <form>
+    <fieldset>
+
+     <legend>👤 DONOR DETAILS</legend>
+      <label>📝 Your Full Name</label><br>
+     <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+      <label>🆔 Donor ID</label><br>     
+     <input type="password" id="Donor-id" placeholder="Enter you donor ID"><br><br>
+      
+       <label>📅 Donation Date</label><br>
+      <input type="date" id="donation-date"><br>
+
+    </fieldset>
+    <br>
+
+
+    <fieldset>
+
+       <legend>📚 BOOK DETAILS </legend>
+
+
+       <label>📂 Select a Book Category</label><br>
+     <select id="Category">
+        <option value="fiction">📖Fiction</option>
+        <option value="science">🔬 Science</option>
+        <option value="history">🏛️ History</option>
+        <option value="education">🎓 Education</option>
+     </select><br><br>   
+
+       <label>⭐ Book Condition</label><br>
+       <input type="radio" name="Condition" value="new">✨ Like New <br>
+       <input type="radio" name="Condition" value="good">👍 Good <br>
+       <input type="radio" name="Condition" value="used">📕 Used <br>
+
+       <label>✍️ Book Title or Additional Notes</label><br>
+       <textarea id="notes" rows="4" cols="40" placeholder="💡 For e.g: Enter the book title, author's name, or any additional notes."></textarea> <br>
+
+    </fieldset>
+
+    <fieldset>
+     <legend>🚚 Preferred Drop-Off Day</legend>
+
+        <input type="checkbox" id="mon" name="dropoff" value="mon">
+        <label for="mon">📅Monday</label><br>
+        
+        <input type="checkbox" id="wed" name="dropoff" value="wed">
+        <label for="wed">📅Wednesday</label><br>
+        
+        <input type="checkbox" id="fri" name="dropoff" value="fri">
+        <label for="fri">📅Friday</label><br>
+
+         <br>
+
+      <input type="submit" value="🎁Donate My Book">
+
+    </fieldset>
+
+    </form>
+    <footer>
+        <p>© 2026 Library Book Donation. All Rights Reserved.</p>
+    </footer>
+  </body>
+</html>
+👤📝🆔📅📚📂📖🔬🏛️🎓 
+⭐✨👍📕✍️💡🚚📅🎁 
