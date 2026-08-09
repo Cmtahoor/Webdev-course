@@ -1,0 +1,33 @@
+ body{
+
+
+    background-color: darkblue;
+    background-image: linear-gradient(to bottom, 
+    darkblue, navy);
+    background-repeat: no-repeat;
+    background-position: top center;
+ }
+
+ .space_page{
+    background-color: purple;
+    background-image: linear-gradient(to right, purple, coral);
+    background-repeat: no-repeat;
+    background-position: top center ;
+    color: white;
+    text-align: center ;
+    border-radius: 30px;
+ }
+
+
+ .fun_space{
+    background-color:midnightblue;
+    border-radius: 20px;
+
+ }
+ #fact{
+     color: orange;
+ }
+footer{
+    text-align: center;
+    color: orangered;
+}

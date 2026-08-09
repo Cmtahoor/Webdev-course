@@ -1,0 +1,65 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+ background-color: rgb(135, 160, 235);
+ background-image: radial-gradient(circle, yellow 3px, transparent 3px);
+ background-size: 50px 50px;
+ background-position: top center;
+ background-repeat: repeat;
+ background-attachment: fixed;   
+ text-align: center;
+}
+
+h1{
+    font-size: 36px;
+    color: bisque;
+}
+
+.caption{
+    font-size: 18px;
+    color: yellow;
+}
+
+.weather_card{
+    width: 400px;
+    border: 3px  solid white;
+    border-radius: 20px ;
+    background-image: linear-gradient( to bottom right , #1e90ff, #87cefa);
+}
+
+.weather_icon{
+    font-size: 100px;
+}
+
+#temperature{
+ font-size: 50px;
+ font-weight: bold;
+ color: darkorange;
+}
+
+.weather_info{
+ font-size: 20px;
+ color: green;
+}
+
+.forcast_section{
+    width: 650px;
+    border: 4px solid white;
+    border-radius: 16px;
+    background-image: radial-gradient(circle, white ,#87cefa );
+    color: black;
+}
+
+.forcast_title{
+    color: darkkhaki;
+}
+
+.forcast{
+    border: 2px solid white;
+    font-size: 17px;
+    color: lawngreen;
+}
