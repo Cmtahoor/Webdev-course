@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Zoo Rescue Tracker</title>
+        <style>
+
+         body{
+            font-family: "Trebuchet MS", Arial, sans-serif;
+            background: #f1fff0;
+            padding: 25px;
+            padding-top: 70px;
+            min-height: 1300px;
+         }
+
+         h1,h2{
+            color: #2d6a4f;
+         }
+
+         h1{
+            text-align: center;
+         } 
+         
+         .alert{
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background:#2d6a4f;
+            color: red;
+            padding: 14px;
+            text-align: center;
+            font-weight: bold;
+         }
+
+         .animal{
+            background: grey;
+            border: 2px solid #2d6a4f;
+            padding: 10px ;
+            margin:8px 0 ;
+            width:220px ;
+         }
+
+         .animal_moved{
+            position: relative;
+            left: 35px;
+            background: #58b0e2;
+         }
+
+         .card{
+            position: relative;
+            background: whitesmoke;
+            border: 2px solid #52b788;
+            border-radius: 10px;
+            padding: 25px;
+            width: 230px;
+            text-align: center;
+         }
+        
+         .tag { 
+         position: absolute; 
+         top: -10px; 
+         right: -10px; 
+         background: #dc5602; 
+         color: white; 
+         padding: 6px 10px; 
+         border-radius: 20px; 
+         font-size: 12px; 
+         font-weight: bold;
+         }
+
+         .zone{
+            position: sticky;
+            top: 50px;
+            background: #2d6a4f;
+            color: whitesmoke;
+            padding: 10px;
+            margin-top: 25px;
+            font-weight: bold;
+         }
+
+         .case{
+            background: white;
+            border: 2px solid #52b788;
+            padding: 10px;
+            margin: 8px 0;
+            width: 230px;
+            border-radius: 8px;
+         }
+
+          code{
+            background: #d8f3dc;
+            color: #1b4332;
+            padding: 2px 5px;
+            border-radius: 4px;
+         }
+
+         .animal:hover,
+         .case:hover {
+          background: #95d5b2;
+          transform: scale(1.03);
+          cursor: pointer;
+         }
+
+        </style>
+    </head>
+    <body>
+       <div class="alert" > Zoo Rescue Alert 🚨 — Emergency Response Team Activated | System Fixed 🦺</div>
+        
+        <h1>🦁Zoo Rescue Tracker 🐾</h1>
+        <p style="text-align: center;">Welcome to the Zoo Rescue Tracker! 🌿
+        Keeping our rescued animals safe, healthy, and protected.🌿🦁💚</p>
+    
+     <h2>Static Positioning 📍</h2>
+    
+     <p>Static positioning is the default behavior of elements. Animal records appear sequentially according to the natural flow
+     of the page.</p>
+    
+     <div class="animal" >🦁Lion — Resting Habitat</div>
+     <div class="animal" >🐘 Elephant — Aquatic Habitat</div>
+     <div class="animal" >🐧 Penguin — Arctic Habitat</div>
+    
+     <h2>Relative Positioning ↔️</h2>
+    
+     <p>Relative positioning allows an element to shift slightly from its original location while preserving its space within
+     the document.</p>
+    
+     <div class="animal" >🦒 Giraffe — Medical Assessment Pending</div>
+     <div class="animal_moved" >🐨 Rescued Koala — Secure and Stable 💚</div>
+     <div class="animal" >🦓 Zebra — Scheduled Feeding Area</div>
+    
+     <h2>Absolute Positioning 🎯</h2>
+    
+     <p>Absolute positioning allows a rescue status indicator to be precisely placed within an animal card.</p>
+     <div class="card">
+     🐼 Panda <br>
+     ✅ Comprehensive Medical Examination Completed
+     <div class="tag">
+     🛡️ Status: SAFE </div>
+     </div>
+
+     <h2>Fixed Positioning 📌</h2>
+    
+     <p>The green rescue alert remains anchored at the top of the screen, even when the page is scrolled.</p>
+    
+     <h2>Sticky Positioning 🧲</h2>
+    
+     <p>The rescue-zone label remains visible near the top while scrolling, making important information easy to access.</p>
+    
+     <div class="zone" >🚨 Rescue Zone Cases — Persistent Tracking</div>
+    
+     <div class="case" > 🐅 Tiger — Under Continuous Observation</div>
+     <div class="case" > 🦌 Deer — Successfully Released</div>
+     <div class="case" > 🦉 Owl — Specialized Night Care</div>
+     <div class="case" > 🐢 Turtle — Shell Rehabilitation</div>
+     <div class="case" > 🐇 Rabbit — Fully Recovered</div>
+     <div class="case" > 🦩 Flamingo — Wing Assessment</div>
+     <div class="case" > 🐒 Monkey — Enrichment and Recreation Area</div>
+     <div class="case" > 🐎 Horse — Recovery and Rehabilitation Stable</div>
+    
+     <h2>Top, Right, Bottom, and Left ⬆️➡️⬇️⬅️</h2>
+     <p>
+     These positioning properties determine the precise placement and movement of elements on the page. By adjusting them,
+     you can control where positioned elements appear and how they interact with their surroundings. 🎨💻
+     The <code>top</code>, <code>right</code>, <code>bottom</code>, and <code>left</code>
+      </p>
+
+     🦁🐘🐧🦒🐨💚🦓🐼🩺✅🦺🌿🐅🦌🦉🐢🐇🦩🐒🐎🧭💚🩺🚑🌟🐾💚🌍
+
+    </body>
+</html>
