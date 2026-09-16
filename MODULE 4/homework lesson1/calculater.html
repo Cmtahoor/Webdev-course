@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1> Calculator</h1>
+    <p>Performing calculations</p>
+    <p id="addat"></p>
+    <p id="subtr"></p>
+    <p id="multi"></p>
+    <p id="divi"></p>
+
+    <script>
+        var num1 = 20;
+        var num2 = 3;
+
+        var add = num1 + num2;
+        var sub = num1 - num2;
+        var mul = num1 * num2;
+        var div = num1 / num2;
+
+        document.getElementById("addat").innerHTML ="The added value is: " + add;
+        document.getElementById("subtr").innerHTML = "The subtracted value is: " + sub;
+        document.getElementById("multi").innerHTML ="The multiplied value is: " + mul;
+        document.getElementById("divi").innerHTML ="The divided value is: " + div;
+    </script>
+</body>
