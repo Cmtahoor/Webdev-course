@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JAVA SCRIPT METHODS</title>
+
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p>STRING VALUES OF JAVA SCRIPT</p>
+        <script>
+            var name = "aeroplane";
+
+            var upper_case = name.toUpperCase();
+            document.write(upper_case);
+
+            document.write("<br>");
+
+            var lower_case = name.toLowerCase();
+            document.write(lower_case);
+      
+            document.write("<br>");
+          
+
+            var start_aeroplane = name.startsWith("T");
+            document.write(start_aeroplane);
+
+            document.write("<br>");
+
+            var sentence = "Commercial jets are manufractured by boeing and airbus"
+
+            var patt = new RegExp("airbus");
+
+            var aeroplane = patt.test(sentence)
+            document.write(aeroplane)
+
+            document.write("<br>");
+
+            for (var a=1; a<=5; a++) {
+                    
+             document.write("airbus");
+                  document.write("<br>");
+
+             }
+
+
+
+        </script>
+    </body>
+</html>
