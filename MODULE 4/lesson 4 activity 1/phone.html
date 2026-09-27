@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+ <head>
+    <title>Phone contacts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+
+    </style>
+ </head>
+
+ <body>
+
+    <h1>My Phone Contact</h1>
+    
+    <p>Introduction to Objects in JavaScript — Grade 4–6</p>
+
+    <div class="container">
+
+     <h2>Contact Details</h2>
+    
+     <p>Name</p>
+    
+     <p id="name">-</p>
+
+     <hr>
+    
+     <h2>Phone</h2>
+    
+     <p id="phone">-</p>
+
+     <hr>
+    
+     <h2>School</h2>
+    
+     <p id="school">-</p>
+
+     <hr>
+    
+     <h2>City</h2>
+    
+     <p id="city" >-</p>
+    
+     <p id="p1">-</p>
+    </div>
+
+    <script>
+      var student1={
+         name:"Tahoor" , 
+         phone:"058580570" ,
+         school:"Emirates flying academy" ,
+         city: "karachi" 
+      };
+
+      document.getElementById("name").innerHTML = student1.name;
+      document.getElementById("phone").textContent = student1["phone"];
+      document.getElementById("school").textContent = student1["school"];
+      document.getElementById("city").textContent = student1.city;
+      
+
+      var student1 = {
+            name: "Tahoor",
+            phone: "058580570",
+            school: "Emirates flying academy",
+            city: "karachi"
+        };
+
+        // document.getElementById("p1").innerHTML = 'var student1 = { \n' + 'name: "' + student1.name +'",' + '\n' + 'phone: "' + student1.phone +'",' +
+        // '\n' + 'school: "' + student1.school +'",' +
+        // '\n' + 'city: "' + student1.city +'",' +
+        // '};' ;
+
+        document.getElementById("p1").textContent =
+
+                'var Student = {\n' +
+
+                ' name: "' + student1.name + '",\n' +
+
+                ' phone: "' + student1.phone + '",\n' +
+
+                ' school: "' + student1.school + '",\n' +
+
+                ' city: "' + student1.city + '"\n' +
+
+                '};';
+
+    </script>
+
+ </body>
+</html>

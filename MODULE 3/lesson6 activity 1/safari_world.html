@@ -24,7 +24,7 @@
            
         </style>
     </head>
-    <body>
+    <body data-spy="scroll"  data-offset="60" data-target="#safarinav">
        
         
         <div class="carousel slide" id="safari" data-ride="carousel">
@@ -37,13 +37,45 @@
             
          <div class="carousel-inner">
              <div class="carousel-item active saf"> <h2> safari ride </h2></div>
-             <div class="carousel-item ai"><h2>air ways </h2></div>
+             <div class="carousel-item ai"><h2>desert </h2></div>
          </div>
 
          
 
          <a data-slide="prev" class="carousel-control-prev" href="#safari"><span class="carousel-control-prev-icon"></span></a>
          <a data-slide="next" class="carousel-control-next" href="#safari"><span class="carousel-control-next-icon"></span></a>
+        </div>
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top" id="safarinav">
+            <span class="navbar-brand">🦁 Safari Guide</span>
+            <ul class="navbar-nav">
+             <li class="nav-item "><a class="nav-link" href="#Forest">Forest</a></li>
+            
+             <li class="nav-item "><a class="nav-link" href="#Ocean">Ocean</a></li>
+            
+             <li class="nav-item "><a class="nav-link" href="#Desert">Desert</a></li>
+           </ul>
+        </nav>
+
+        <div class="container">
+            <div id="Forest"  style="height: 400px; padding-top: 100px;" class="bg-success">
+                 
+                
+               <h2>🌿 Forest Safari</h2>
+
+               <p>Explore tall trees and discover tigers, elephants, and monkeys!</p>
+
+            </div>
+            
+            <div id="Ocean" style="height: 400px; padding-top: 100px;" class="bg-primary">
+               <h2>🌊 Ocean Safari</h2>
+              <p>Dive deep and meet dolphins, sharks, and colourful clownfish!</p>
+            </div>
+        
+            <div id="Desert" style="height: 400px; padding-top: 100px;" class="bg-warning">
+              <h2>🏜️ Desert Safari</h2>
+               <p>Trek across the sand dunes and spot camels, lizards, and desert foxes!</p>
+            </div>
         </div>
 
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

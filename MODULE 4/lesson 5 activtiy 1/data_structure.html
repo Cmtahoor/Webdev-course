@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>data structure</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+
+        </style>
+    </head>
+
+    <body>
+        <p id="p1"></p>
+        <p id="p2"></p>
+        <p id="p3"></p>
+        <p id="p4"></p>
+
+        <script>
+            
+            var fruits =['mango','banana','apple','orange'];
+
+            var myjoin = fruits.join('---');
+
+            document.getElementById("p1").innerHTML = fruits;
+
+            fruits.pop();
+
+            document.getElementById("p2").innerHTML = fruits;
+
+            document.getElementById("p3").innerHTML = fruits[2];
+
+
+            function add(a, b) {
+                    var sum = a + b;
+                    return sum;
+            }
+           
+            function average(a, b) {
+
+                 var sum = add(a,b);
+                 var avg = sum/2;
+                 return avg;
+
+            }
+
+            
+         var average = average(10,30);
+         document.getElementById("p4").innerHTML = "The average is" + average;
+
+
+        </script>
+    </body>
+</html>
