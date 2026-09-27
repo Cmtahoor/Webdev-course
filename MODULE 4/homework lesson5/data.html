@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+ <body>
+     <h2>JavaScript Objects Data Structure and Array</h2>
+        <script>
+
+         var Student = {
+                name: "Tahoor",
+                age: "14",
+                grade:"10",
+                hobbies:"action,history,thriller novel reading",
+                school: "Emirates flying academy",
+                city: "karachi",
+                fav_sport: "all"
+            };
+
+            var color = ["green", "orange", "blue", "yellow", "red"];
+
+            document.write("Student name is : " + Student.name,
+            "<br>", "Student favorite sport is : " + Student.fav_sport);
+
+            document.write("<br>Before Poping the colors are: " + color.join("^"));
+            document.write("<br> favorite color is : " + color[2]);
+            color.pop();
+            document.write("<br>After Poping the colors are : " + color.join("*"));
+
+        </script>
+    </body>
+</html>  
