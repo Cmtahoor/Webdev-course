@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MY GAME PROFILE</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <h1>MY GAME PROFILE</h1>
+        <p id="name"></p>
+        <p id="score"></p>
+        <p id="team"></p>
+        <p id="bonus"></p>
+        <p id="topScore"></p>
+        <p id="Date1"></p>
+
+        <script>
+
+            var team;
+            var bonus = null;
+            
+
+            var name = "Alex";
+                var myScore = 75;
+                var highScore = 100;
+                var topScore = myScore==highScore
+                document.getElementById("name").innerHTML = name;
+                document.write("<br><hr>")
+                document.getElementById("score").innerHTML = myScore + " out of " + highScore;
+                document.write("<br><hr>")
+                document.getElementById("team").innerHTML = team;
+                document.write("<br><hr>");
+                document.getElementById("bonus").innerHTML = bonus;
+                document.write("<br><hr>");
+                document.getElementById("topScore").innerHTML= topScore;
+                document.write("<br><hr>");
+               
+            var date1 = new Date().getHours();
+            document.write(date1)
+
+                
+        </script>
+    </body>
+</html>

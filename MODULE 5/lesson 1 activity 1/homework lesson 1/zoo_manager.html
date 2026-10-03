@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🐼DIGITAL WILDLIFE🦁 PARK MONITORING🐘</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <style>
+           body {
+             font-family: Arial, sans-serif;
+             background-color: #F1F8E9;
+             text-align: center;
+             color: #263238;
+            }
+
+           h1 {
+             color:#1B5E20;
+            }
+
+          #Zoo {
+             width: 420px;
+             border: 3px solid #2E7D32;
+             border-radius: 12px;
+             background-color: white;
+             margin: 20px auto;
+             padding: 15px;
+            }
+
+         .zones {
+             border: 2px solid #66BB6A;
+             border-radius: 8px;
+             margin: 10px;
+             padding: 12px;
+             background-color: #F9FFF5;
+             text-align: left;
+            }
+
+         .animal {
+             font-weight: bold;
+             color: #E65100;
+            }
+
+          button {
+             background-color: #388E3C;
+             color: white;
+             border: none;
+             border-radius: 20px;
+             padding: 10px 22px;
+             cursor: pointer;
+             font-weight: bold;
+            }
+
+            #output {
+             width: 420px;
+             border: 2px dashed #689F38;
+             border-radius: 10px;
+             background-color: #ffffff;
+             margin: 20px auto;
+             padding: 12px;
+             text-align: left;
+            }
+
+        </style>
+    </head>
+
+    <body>
+     <h1>🦁 My Digital safaripark monitor Manager 🐘🐼</h1>
+        
+     <p>Welcome to Digital Zoo Manager! 🌿✨</p>
+          
+     <hr>
+        
+      <p>Usage of <strong>JavaScript</strong> and the <b>HTML DOM</b>to explore the structure of a digital zoo and understand how different elements are connected.Investigatation of parent nodes, child nodes, sibling nodes, and node types are allowed dynamically modifying the webpage. 💻🌳</p>
+        
+      <div id="Zoo">
+            🏞️ Zoo Zones
+        
+         <div class="zones" id="lionZone">
+             <h2>🦁Lion Zone</h2>
+             <p>Animal: <span class="animal">🦁lion</span></p>
+            </div>
+           
+         <div class="zones" id="elephantZone">
+             <h2>🐘Elephant Zone</h2>
+             <p>Animal: <span class="animal">🐘Featuring the intelligent and majestic elephant.</span></p>
+            </div>
+
+          <div class="zones" id="pandaZone">
+              <h2>🐼Panda Zone</h2>
+             <p>Animal: <span class="animal">🐼A peaceful habitat for the adorable panda.🐼</span></p>
+            </div>
+        </div>
+
+       
+        <button onclick="manageZoo()">Inspect Wildlife</button>
+
+
+        <div id="output">
+          Information will appear here.
+        </div>
+
+
+        <p> (The<strong> Inspect-wildlife</strong> button brings the digital zoo to life by using JavaScript to inspect the DOM,identify relationships between elements,and dynamically update their content and appearance.🚀🦒🌿)</p>
+        
+        <h3>🔍 DOM Tree Information</h3>
+        
+        <p>The DOM (Document Object Model) represents the webpage as a structured tree of interconnected elements.🌳💻</p>
+
+       <ul>
+         <li>🌿Parent of Lion Zone: The main zoo container.</li>
+         <li>🥇First child of Zoo: Lion Zone.</li>
+         <li>🥈 Second child of Zoo: Elephant Zone.</li>
+       </ul>
+
+        <h3>🔗 Sibling Node Information</h3>
+        
+        <p>Elements positioned at the same level in the DOM are known as siblings.</p>
+        
+        <p>➡️ Next sibling of Lion Zone: Elephant Zone.</p>
+
+        <p>⬅️ Previous sibling of Panda Zone: Elephant Zone.</p>
+        
+        <h3>🧩 Types of Nodes</h3>
+        
+        <p>Every element in the DOM has a specific <strong>node type</strong>.
+
+        <ul>
+          <li>🔹Lion Zone element node type: Element Node.</li>
+          <li>📝Lion Zone first child node type: Text Node.</li>
+        </ul>
+        
+        <h3>🎨 Dynamic DOM Updates</h3>
+        
+        <p>JavaScript dynamically transforms the zoo by:</p>
+        
+        <ul>
+         <li>🟡 Updating the Lion Zone background.</li>
+         <li>🔵 Updating the Elephant Zone background.</li>
+         <li>🔴 Updating the Panda Zone background.</li>
+         <li>✨ Changing the headings of all three animal Zones.</li>
+        </ul>
+
+        <script>
+            function manageZoo (){
+                let Zoo = document.getElementById("Zoo");
+                let lionZone = document.getElementById("lionZone");
+                let elephantZone = document.getElementById("elephantZone");
+                let pandaZone= document.getElementById("pandaZone");
+                let output = document.getElementById("output");
+             
+                let parentNodeName =lionZone.parentNode.id;
+
+                let firstChildZone = Zoo.children[0].id;
+                let secondChildZone = Zoo.children[1].id;
+                let nextSiblingZone = lionZone.nextElementSibling.id;
+                let previousSiblingZone = pandaZone.previousElementSibling.id;
+
+                let elementNodeType = lionZone.nodeType;
+                let textNodeType = lionZone.firstChild.nodeType;
+
+    
+                lionZone.style.backgroundColor = "#FFF3CD";
+                elephantZone.style.backgroundColor = "#DCEFF2";
+                pandaZone.style.backgroundColor = "#F8DDE1";
+
+                lionZone.querySelector("h2").innerHTML = "Updated Lion Zone";
+                elephantZone.querySelector("h2").innerHTML = "Updated Elephant Zone";
+                pandaZone.querySelector("h2").innerHTML = "Updated Panda Zone";
+              
+                output.innerHTML =
+                "<strong>DOM Tree Information:</strong><br>" +
+                "Parent of Lion Zone: " + parentNodeName + "<br>" +
+                "First child of Zoo: " + firstChildZone + "<br>" +
+                "Second child of Zoo: " + secondChildZone + "<br><br>" +
+
+                "<strong>Sibling Node Information:</strong><br>" +
+                "Next sibling of Lion Zone: " + nextSiblingZone + "<br>" +
+                "Previous sibling of Panda Zone: " + previousSiblingZone + "<br><br>" +
+
+                "<strong>Types of Nodes:</strong><br>" +
+                "Lion Zone element node type: " + elementNodeType + "<br>" +
+                "Lion Zone first child text node type: " + textNodeType + "<br><br>" +
+
+                "<strong>DOM Update:</strong><br>" +
+                "The animal Zone headings and background colours were updated using JavaScript.";
+            }
+
+           
+        </script>
+    </body>
+</html>

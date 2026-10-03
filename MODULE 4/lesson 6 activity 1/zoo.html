@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>ZOO</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+        <style>
+         .Zone{
+            border: 1px solid blue;
+         }
+
+         .water{
+            border: 1.5px solid black;
+         }
+        
+         body{
+            background-color: aqua;
+         }
+         
+        </style>
+    </head>
+
+    <body>
+      <div class="container">
+
+         <h1>ZOO</h1>
+         <p>Use JavaScript and the DOM to add animals to each cage!</p>
+    
+      
+         <div class="water" id="tyr">
+             <div class="Zone my-3"> Zone 1: <span id="Zone1"></span></div>
+    
+             <div class="Zone my-3"> Zone 2:<span id="Zone2"></span></div>
+    
+             <div class="Zone my-3"> Zone 3: <span id="Zone3"></span></div>
+    
+             <div class="Zone my-3">Total Animals: <span id="total-of-Animals"></span></div>
+         </div>
+
+          <button onclick="see()" style="margin-top: 23px;">Open the Zoo!</button>
+        
+        </div>
+
+        <script>
+            function see() 
+            {
+            document.getElementById("Zone1").innerHTML = "lion";
+            document.getElementById("Zone2").innerHTML = "elephant";
+            document.getElementById("Zone3").innerHTML = "penguin";
+            document.getElementById("total-of-Animals").innerHTML = "3";
+
+            document.getElementById("tyr").style.backgroundColor="lightgreen";
+
+            }
+        </script>
+
+    </body>
+</html>
