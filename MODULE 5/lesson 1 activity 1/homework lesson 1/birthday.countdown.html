@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>🎉Countdown for birthday 🎉 </title>
+        <style>
+          body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dfd1bd, #d56a47);
+            color: #3b2f2f;
+            text-align: center;
+        }
+
+        .birthday-card {
+            width: 520px;
+            background-color: blueviolet;
+            border: 4px solid #e03960;
+            border-radius: 20px;
+            margin: 40px auto;
+            padding: 25px;
+            box-shadow: 0 0 20px #ff8fab;
+        }
+
+        .emoji {
+            font-size: 40px;
+        }
+
+        h1 {
+            color: #ff477e;
+        }
+
+        button {
+            background-color: #ff477e;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 12px 25px;
+            font-size: 18px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #d6336c;
+        }
+
+        #daysBox {
+            font-size: 42px;
+            font-weight: bold;
+            color: #7209b7;
+            margin: 15px;
+        }
+
+        .infoBox {
+            background-color: #fff0f5;
+            border: 2px dashed #ff6f91;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        #result,
+        #countdown {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        #countdown {
+            color: #ff477e;
+            font-weight: bold;
+        }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="birthday-card">
+
+          <div class="emoji">🎂Birthday Time!🎉</div>
+        
+          <h1>🌟My Birthday Countdown Checker🌟</h1>
+         
+          <p>✨Click the button below to discover how many days remain until birthday celebration!🎈🥳</p>
+        
+         <button onclick="checkBirthday()">🎯 Check Birthday Countdown</button>
+        
+          <h2>⏳ Days Remaining</h2>
+        
+         <div id="daysBox">❓</div>
+        
+         <div class="infoBox">
+              <h2>🎁 Birthday Result</h2>
+              <p id="result"> </p>
+          </div>
+
+         <div class="infoBox">
+             <h2>🎊 Countdown Review</h2>
+             <p id="countdown"></p>
+          </div>
+
+        </div>
+
+
+        <script>
+
+           function checkBirthday() {
+                
+                let birthdayGift = null;
+                let birthdayPlan;
+
+
+                
+                const studentName = "👤No-one";
+                const birthdayMonth = 10;
+                const birthdayDate = 5;
+
+                let message = "";
+                let countdownText = "";
+
+                let today = new Date();
+                let currentYear = today.getFullYear();
+                let birthday = new Date(currentYear, birthdayMonth - 1, birthdayDate);
+
+
+               if (birthday < today) {
+                    birthday = new Date(currentYear + 1, birthdayMonth - 1, birthdayDate);
+                }
+
+                let timeDifference = birthday - today;
+                let daysLeft = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+
+               if (daysLeft == 0) {
+
+                   message =
+                       "🎉 Happy Birthday, " +
+                       studentName +
+                       "! Today is your special day! 🥳🎂";
+
+               } 
+               else if (daysLeft <= 7) {
+
+                   message =
+                       "🎈 Your birthday is almost here, " +
+                       studentName +
+                       "! Get ready for a joyful celebration! 🥳🎁";
+
+               } 
+               else {
+
+                   message =
+                       "✨ Keep counting, " +
+                       studentName +
+                       "! Your birthday is coming soon. " +
+                       "A wonderful celebration awaits! 🎂🎉";
+               }
+
+        
+               let finalMessage =
+                   "👤 Student Name: " +
+                   studentName +
+                   "<br>";
+
+               finalMessage +=
+                   "📅 Today's Date: " +
+                   today.toDateString() +
+                   "<br>";
+
+               finalMessage +=
+                   "🎂 Birthday Date: " +
+                   birthday.toDateString() +
+                   "<br>";
+
+               finalMessage +=
+                   "💬 Birthday Message: " +
+                   message +
+                   "<br><br>";
+
+               finalMessage +=
+                   "🎁 Birthday Gift: " +
+                   birthdayGift +
+                   "<br>";
+
+               finalMessage +=
+                   "📋 Birthday Plan: " +
+                   (birthdayPlan || "Still being planned");
+
+               
+               document.getElementById("daysBox").innerHTML = daysLeft;
+
+               document.getElementById("result").innerHTML = finalMessage;
+
+               let day = 1;
+
+               while (day <= 2) {
+
+                   countdownText +=
+                       "🔢 Countdown Check " +
+                       day +
+                       ": Birthday excitement is loading... 🎈✨<br>";
+
+                   day++;
+               }
+
+               document.getElementById("countdown").innerHTML = countdownText;
+               
+            }
+        </script>
+    </body>
+</html>
