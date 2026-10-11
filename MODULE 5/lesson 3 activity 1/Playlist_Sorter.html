@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PLAYLIST SORTER</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <h1>My Array Sorter</h1>
+
+        <h2>Sort Words</h2>
+
+    
+        <button onclick="sending()">Ascending</button>
+        <button onclick="backsending()">Descending</button>
+
+
+        <p id="sorted-fruits"></p>
+        <p id="unsorted-fruits"></p>
+
+        <h2>Sort numbers</h2>
+        <button onclick="sent()">Ascending</button>
+        <button onclick="backsent()">Descending</button>
+        
+        
+        
+        <p id="sort-numbers"></p>
+        <p id="unsort-numbers"></p>
+
+        <h2>Using maps</h2>
+        <button onclick="map0fa()">GPS</button>
+        <p id="tracking"></p>
+
+        <script>
+
+            var fruits = ["APPLE","MANGO","ORANGE","STRABERRY"];
+
+           function sending(){
+             fruits.sort() ;
+
+             document.getElementById("sorted-fruits").innerHTML = fruits;
+            }
+
+            function backsending() {
+             fruits.sort();
+             fruits.reverse();
+
+             document.getElementById("unsorted-fruits").innerHTML = fruits;
+            }
+
+            var num = [3300,450,180,50,200,299]
+
+            function sent(){
+             num.sort(function(a,b){
+                return a - b ;
+             } );
+
+             document.getElementById("sort-numbers").innerHTML = num;
+            }
+
+            function backsent() {
+             num.sort(function (a, b) {
+               return b - a;
+                });
+
+             document.getElementById("sort-numbers").innerHTML = num;
+            }
+
+            var number = [320, 85, 210, 50, 175];
+
+            function map0fa() {
+             
+                var updatednumbers = number.map(function(item){
+                  return item + "tickets";
+                });
+                    
+                document.getElementById("tracking").innerHTML = updatednumbers;
+    
+            }
+
+        </script>
+    </body>
+</html>

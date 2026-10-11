@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SUPER HERO CARD</title>
+        <style>
+            body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(11, 177, 206);
+            text-align: center;
+            padding: 30px;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        p {
+            color: #444444;
+        }
+
+        button {
+            background-color: orange;
+            color: black ;
+            border: dotted ,rgb(155, 68, 52);
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+            flex-wrap: wrap;
+        }
+
+        .hero-card {
+            background-color: rgb(145, 207, 32);
+            border: 3px solid indigo;
+            border-radius: 12px;
+            width: 220px;
+            padding: 18px;
+        }
+
+        .hero-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #222222;
+        }
+
+        .hero-power {
+            color: #0057b8;
+            font-weight: bold;
+        }
+
+        .hero-mission {
+            color: rgb(27, 128, 128);
+            font-size: 14px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Super power card</h1>
+        <p>
+          Click to start   
+        </p>
+        <button onclick="showHeroes()">Superhero</button>
+        <div class="card-container" id="heroCards"></div>
+
+        <script>
+           
+           class Superhero {
+                constructor(name, authority, project) {
+
+                    this.name = name;
+                    this.authority = authority;
+                    this.project = project;
+                }
+                describeHero() {
+                   return "<div class='hero-card'>" +
+                       "<p class='hero-name'>" + this.name + "</p>" +
+                       "<p class='hero-power'>authority: " + this.authority + "</p>" +
+                       "<p class='hero-mission'> Project: " + this.project + "</p>" +
+                       "</div>";
+               }
+           }
+            
+           function showHeroes() {
+                let hero1 = new Superhero(
+                    "Code police",
+                    "Debugging games",
+                    "Removing errors and criminal bugs from gaming programs."
+                );
+
+                let hero2 = new Superhero(
+                    "Boostrap Marshal",
+                    "Smart efficient building",
+                    "Constructing visually attractive websites in seconds."
+                );
+
+                let hero3 = new Superhero(
+                    "Code lieftenant",
+                    "Intelligence coding bereau",
+                    "Logical planning for future website errors."
+                );
+
+                let hero4 = new Superhero(
+                    "Cheif of the coding staff",
+                    "Data protection",
+                    "Securing confidential data from leaks with help from bootstrap battalions."
+                );
+
+                document.getElementById("heroCards").innerHTML =
+                    hero1.describeHero() +
+                    hero2.describeHero() +
+                    hero3.describeHero() +
+                    hero4.describeHero();
+            }
+           
+        </script>
+    </body>
+</html>

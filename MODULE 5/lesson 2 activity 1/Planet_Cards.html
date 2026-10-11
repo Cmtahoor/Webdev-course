@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PLANET CARD</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+
+        <button onclick="checkspace()">EXPLORE the outer space</button>
+
+        <script>
+           class planet{
+              constructor(name,fact){
+
+              this.name= name;
+              this.fact = fact; 
+             }
+        
+             describe(){
+                 document.write(this.fact);
+              }
+            }
+           
+           let p1 = new planet("earth","life");
+           let p2 = new planet("Mars", "red planet");
+
+           function checkspace() {
+
+                 document.write(p1.name);
+                 p1.describe();
+
+                 document.write(p2.name);
+                 p2.describe();
+            }
+
+        </script>
+    </body>
+</html>
