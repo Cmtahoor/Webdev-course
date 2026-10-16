@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <title>WORD LAB</title>
+    <head>
+       <style>
+
+       </style>
+    </head>
+    <body>
+
+        <button onclick="secret()">Reveal the Types!</button>
+        <p id="para">Press the button to reveal the secret types!</p>
+
+        <br>
+        <br>
+
+        <input id="numIn" placeholder="Type any number here (try: 42)">
+
+        <button onclick="tostr()">TURN INTO TEXT</button>
+        <button onclick="tonum()">TURN INTO NUMBER</button>
+        <div id="convResult">
+          Type a number above and press the button above
+        </div>
+
+        <p id="try"></p>
+    
+
+        <br>
+        <br>
+
+        <input id="findW" placeholder="Word to find (try: dragon)">
+        
+        <br>
+        
+        <input id="swapW" placeholder="Swap it with (try: wizard)">
+
+        <button onclick="serc()">FIND IT!</button>
+        <button onclick="reser()">SWAP IT!</button>
+        <div id="srResult">
+           The dragon flew over the big castle
+        </div>
+
+
+        <script>
+            function secret(){
+                document.getElementById("para").innerText= 
+                " Score - 42 " + typeof 42 + "\n" +
+                " name - Alex " + typeof "Alex" + "\n" +
+                "flag - true " + typeof true + "\n" ;
+            }
+
+            function tostr(){
+                var x = document.getElementById("numIn").value ;
+                var x1 = String(x)
+                document.getElementById("try").innerText=
+                "data type of x is:"+ typeof x + "\n"+
+                "type of x1 is:"+ typeof x1;
+            }
+
+            function tonum() {
+             var x = document.getElementById("numIn").value;
+             var x1 = Number(x)
+                document.getElementById("try").innerText =
+                "data type of x is:" + typeof x + "\n" +
+                "type of x1 is:" + typeof x1;
+            }
+
+            var t = "The dragon flew over the big castle"
+
+            function serc(){
+                var w = document.getElementById("findW").value;
+                var position = t.search(w)
+                document.getElementById("srResult").innerText = w +" is found at the position" + position         }
+
+                function reser() {
+                 var w = document.getElementById("findW").value;
+                 var e = document.getElementById("swapW").value
+                 document.getElementById("srResult").innerText = t.replace(w,e)
+                }
+
+        </script>
+    </body>
+</html>
