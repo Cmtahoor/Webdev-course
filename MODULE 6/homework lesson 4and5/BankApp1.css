@@ -1,0 +1,92 @@
+.navbar{
+    background: #172b4d;
+}
+.navbar .nav-link {
+    color: white;
+}
+
+.navbar .nav-link:hover {
+    color: gold;
+}
+#app-title {
+    text-transform: uppercase;
+    color: black;
+}
+
+#balance-label {
+    text-decoration: underline;
+}
+
+#balance-box {
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 12px;
+    background-color: rgb(42, 67, 160);
+    color: coral;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#credit-btn {
+    border: 2px dashed black;
+    background-color: yellow;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#debit-btn {
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#amount-label {
+    text-decoration: underline;
+    color: rgb(34, 1, 75);
+    box-shadow: 0 2px 4px rgb(0, 0, 0, 0.3);
+}
+#note{
+ font-size: 18px;
+ color: aqua;
+}
+#app {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #eaf2f8;
+    padding: 25px;
+    background-image: url("aero3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 500px;
+}
+#secur{
+    color: yellow;
+    text-shadow: 2px 2px 4px black;
+    font-weight: bold;
+    margin: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #172b4d;
+    color: rgb(183, 193, 71);
+}
+
+.terms-card {
+    background-color: #474592;
+    color: gold;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+.terms-card ul {
+    text-align: left;
+    font-size: 18px;
+}
